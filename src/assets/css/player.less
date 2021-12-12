@@ -1,0 +1,306 @@
+
+* {
+  margin: 0;
+  padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s;
+  }
+  #app {
+    height: 100%;
+  }
+  html,
+  body {
+    height: 100%;
+  }
+  ol,
+  ul {
+    list-style: none;
+  }
+  
+  img {
+    width: 100%;
+  }
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+  img {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  h3 {
+    margin: 40px 0 20px 0;
+  }
+    .load{
+      position: absolute;
+      font-size: 50px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      color: #409EFF;
+    }
+
+  .small {
+    color: rgb(131, 131, 131);
+    font-size: 13px;
+  }
+  .el-pagination {
+    text-align: center;
+  }
+ 
+  .iconPlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 3px;
+    border-radius: 100%;
+    background-color: #fff;
+    color: rgb(64, 158, 252);
+    opacity: 0;
+    cursor: pointer;
+    &:hover {
+      background-color: #ccc;
+    }
+  }
+  .listClass {
+    margin: 20px 0;
+    overflow: hidden;
+    ul {
+      float: right;
+      li {
+        float: left;
+        margin-left: 20px;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+        padding: 2px 5px;
+        &:hover{
+          color: rgb(64, 158, 252);
+        }
+      }
+    }
+  }
+  .active {
+    color: #409eff;
+    background-color: #40a0ff70;
+    &:hover{
+      color: #409eff;
+    }
+  }
+  .mv_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    .mvBox {
+      width: 250px;
+      height: 220px;
+      padding: 5px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      &:hover {
+        box-shadow: 1px 1px 10px #ccc;
+      }
+      &:hover > .mvBox_Img > .iconPlay {
+        opacity: 1;
+        box-shadow: 1px 1px 10px #ccc;
+      }
+      .mvBox_Img {
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        img{
+          width: 240px;
+          height: 135px;
+        }
+        i {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          color: #fff;
+        }
+        .iconPlay {
+          font-size: 30px;
+        }
+        span.time{
+          position: absolute;
+          bottom: 10px;
+          left: 10px;
+          font-size: 14px;
+          color: #fff;
+        }
+      }
+      .mvBox_Msg {
+        p:last-child {
+          color: rgb(175, 175, 175);
+          text-indent: 0.5em;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  .conmentWrap {
+    .Comment {
+      margin-bottom: 30px;
+      h4 {
+        margin-bottom: 10px;
+      }
+      .commentBox {
+        display: flex;
+        margin-bottom: 20px;
+        .img {
+          margin-right: 10px;
+          img {
+            width: 40px;
+            height: 40px;
+            border-radius: 100%;
+          }
+        }
+        .comments {
+          width: 100%;
+          padding: 10px;
+          font-size: 15px;
+          border-radius: 5px;
+          background-color: rgb(235, 232, 232);
+          span.name {
+            color: #409EFF;
+            font-size: 14px;
+          }
+          .reply {
+            display: inline-block;
+            width: 100%;
+            border-radius: 5px;
+            margin: 5px 0;
+            padding: 5px 15px;
+            background-color: rgba(187, 187, 187, 0.397);
+            .name{
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .song_wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    .song_box {
+      width: 200px;
+      height: 225px;
+      margin-bottom: 50px;
+      &:hover span {
+        opacity: 1;
+      }
+    }
+    .song_boxImg {
+      position: relative;
+      border-radius: 10px;
+      overflow: hidden;
+      p {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        padding: 3px;
+        color: #fff;
+        font-size: 15px;
+        top: -41px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+      .iconPlay {
+        font-size: 35px;
+      }
+      &:hover > P {
+        top: 0;
+      }
+    }
+    .song_boxTitle {
+      font-size: 14px;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 2;
+    }
+  }
+  // 和subSong搜索到的歌共用组件
+table {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-collapse: collapse;
+  thead {
+    th {
+      font-weight: normal;
+      font-size: 14px;
+      color: #acaaaa;
+      margin-bottom: 10px;
+    }
+    th:nth-child(2) {
+      width: 50px;
+    }
+    th:nth-child(3) {
+      width: 300px;
+    }
+    th:nth-child(4) {
+      width: 200px;
+    }
+
+    th:nth-child(5) {
+      width: 200px;
+    }
+  }
+  tbody {
+    .T_row {
+      text-align: center;
+      td {
+        font-size: 15px;
+        height: 100px;
+        .songImg {
+          border-radius: 10px;
+          overflow: hidden;
+          position: relative;
+          img {
+            width: 70px;
+            height: 70px;
+          }
+          .iconPlay {
+            font-size: 20px;
+          }
+          &:hover .iconPlay {
+            opacity: 1;
+          }
+        }
+      }
+       td:nth-child(3) {
+        position: relative;
+        span.mv {
+          position: absolute;
+          color: red;
+          font-size: 13px;
+          top: 30px;
+        }
+      }
+     
+
+      &:hover {
+        background: #dddbdb54;
+      }
+    }
+    .T_row:nth-child(2n) {
+      background: #acaaaa54;
+    }
+  }
+}
+span.mvIcon {
+  font-size: 12px;
+  border: 2px solid red;
+  color: red;
+  padding: 0 3px;
+  margin-right: 10px;
+}
