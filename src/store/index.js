@@ -75,7 +75,7 @@ export default new Vuex.Store({
         sessionStorage.setItem("musicUrl", data[0].url);
         state.musicUrl = data[0].url;
       } else {
-        window.vue.$message.error("无版权");
+        this.$message.error("无版权");
       }
     },
     // audio播放

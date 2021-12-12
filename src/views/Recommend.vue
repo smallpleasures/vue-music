@@ -123,7 +123,7 @@ export default {
       requestWyy({
         url: "/top/playlist/",
         params: {
-          limit: 10,
+          limit: 12,
           offset: (this.curPage - 1) * 10,
           cat: this.tag,
         },

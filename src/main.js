@@ -7,7 +7,7 @@ import "../src/assets/css/player.css";
 
 Vue.config.productionTip = false;
 
-window.vue = new Vue({
+new Vue({
   router,
   store,
   render: (h) => h(App),

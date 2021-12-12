@@ -1,8 +1,8 @@
 <template>
   <div class="top">
     <div class="logo">
-      Music
-      <span>Hub</span>
+      Vue
+      <span>Music</span>
     </div>
     <div class="histroy">
       <span class="el-icon-arrow-left" @click="back"></span>
@@ -43,9 +43,9 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
-    <el-button class="login" type="primary" @click="toLogin" size="mini" v-else
+<!--    <el-button class="login" type="primary" @click="toLogin" size="mini" v-else
       >登入</el-button
-    >
+    >-->
     <!-- <button @click="test">test</button> -->
   </div>
 </template>

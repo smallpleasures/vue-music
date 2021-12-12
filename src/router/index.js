@@ -10,7 +10,7 @@ Vue.use(VueRouter);
 const router = new VueRouter({
   routes,
 });
-// 路由守卫
+/*// 路由守卫
 router.beforeEach((to, from, next) => {
   const token = store.state.login.token;
   if (to.path == "/myhome") {
@@ -23,5 +23,5 @@ router.beforeEach((to, from, next) => {
   } else {
     next();
   }
-});
+});*/
 export default router;
