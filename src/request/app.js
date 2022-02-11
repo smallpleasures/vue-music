@@ -5,7 +5,7 @@ export function requestWyy(config) {
   // axios.defaults.headers.common["Authorization"] = AUTH_TOKEN;
 
   const instance = axios.create({
-    baseURL: "http://1.15.155.218:8088/",
+    baseURL: "http://www.codeman.ink/api",
   });
   // 请求拦截
   instance.interceptors.request.use(
