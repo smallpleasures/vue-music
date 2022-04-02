@@ -32,6 +32,7 @@
       controls
       style="width: 100%"
       autoplay
+      loop
     ></audio>
     <!-- <play-bar ref="playbar"/> -->
   </div>
